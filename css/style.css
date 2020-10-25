@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right; }
 
 .container {
-  width: 640px;
+ max-width: 640px;
   margin: 0 auto;
   /* border: 1px solid #c1c1c1; */
 }
