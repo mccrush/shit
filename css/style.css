@@ -96,7 +96,7 @@ ul.list > li.list-item {
 }
 
 .item-head-arrow {
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .item-head-rotate {
@@ -104,10 +104,15 @@ ul.list > li.list-item {
 }
 
 .item-body {
-  height: 0;
+  height: auto;
+  max-height: 0;
   overflow: hidden;
   background-color: #F5F6F7;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.height-auto {
+  max-height: 316px;
 }
 
 .image-cover {
