@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       item.addEventListener('click', () => {
         item.nextElementSibling.classList.toggle("show-item")
         if (item.nextElementSibling.classList.contains("show-item")) {
-          item.nextElementSibling.style.height = '290px'
+          item.nextElementSibling.style.height = '316px'
           item.children[1].classList.add('item-head-rotate')
         } else {
           item.nextElementSibling.style.height = 0

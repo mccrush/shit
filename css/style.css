@@ -133,6 +133,6 @@ ul.list > li.list-item {
 }
 
 .footer {
-  /* border-top: solid 2px rgba(210, 215, 217, 0.75); */
+  border-top: solid 1px rgba(210, 215, 217, 0.75);
   padding: 16px;
 }
