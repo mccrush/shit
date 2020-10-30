@@ -130,6 +130,10 @@ ul.list > li.list-item {
   font-size: .9rem;
 }
 
+.margin-top-16 {
+  margin-top: 16px;
+}
+
 .footer {
   border-top: solid 1px rgba(210, 215, 217, 0.75);
   padding: 16px;
