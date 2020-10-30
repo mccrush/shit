@@ -99,6 +99,14 @@ ul.list > li.list-item {
   border-radius: 16%;
 }
 
+.item-head-arrow {
+  transition: 0.3s ease-in-out;
+}
+
+.item-head-rotate {
+  transform: rotate(90deg);
+}
+
 .item-body {
   height: 0;
   overflow: hidden;

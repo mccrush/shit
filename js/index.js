@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
         item.nextElementSibling.classList.toggle("show-item")
         if (item.nextElementSibling.classList.contains("show-item")) {
           item.nextElementSibling.style.height = '290px'
+          item.children[1].classList.add('item-head-rotate')
         } else {
           item.nextElementSibling.style.height = 0
+          item.children[1].classList.remove('item-head-rotate')
         }
 
       })
