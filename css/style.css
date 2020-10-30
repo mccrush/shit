@@ -59,6 +59,8 @@ ul.nav > li.nav-item > a {
   width: 100%;
   padding: 16px 0;
   text-decoration: none;
+  font-weight: bold;
+  color: #3d4449;
   background: #fff;
   transition: 0.3s ease-in-out;
 }
@@ -123,6 +125,6 @@ ul.list > li.list-item {
 }
 
 .footer {
-  border-top: solid 2px rgba(210, 215, 217, 0.75);
+  /* border-top: solid 2px rgba(210, 215, 217, 0.75); */
   padding: 16px;
 }
