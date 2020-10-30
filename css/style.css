@@ -42,9 +42,33 @@ h1, h2, h3, h4, h5, h6 {
   /* padding: 16px; */
 }
 
-ul.list {
-  list-style: none;
+ul.nav {
+display: flex;
+justify-content: space-between;  
+}
 
+ul.nav > li.nav-item {
+  display: block;
+  width: 33%;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+ul.nav > li.nav-item > a {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  text-decoration: none;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+ul.nav > li.nav-item > a:hover {
+  background: #F5F6F7
+}
+
+ul.nav, ul.list {
+  list-style: none;
 }
 
 ul.list > li.list-item {
