@@ -12,6 +12,7 @@
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <title>Electro Shit - Справка</title>
 </head>
 
@@ -43,7 +44,9 @@
         - Автоматы (по комнатам, отдельно на свет, отдельно на розетки, отдельно на мощные эл. приборы)
       </p>
       <div class="image-cover">
-        <img src="img/sprav/tabl_raschet.png" width="320" height="110" alt="" class="item-image">
+        <a data-fancybox="gallery" href="img/sprav/tabl_raschet.png">
+          <img src="img/sprav/tabl_raschet.png" width="320" height="110" alt="Расчет сечения кабеля" class="item-image">
+        </a>
       </div>
 
       <hr>
@@ -54,7 +57,9 @@
         - Мощность (P, ватт) - произведение мгновенных значений напряжения и силы тока на участке цепи
       </p>
       <div class="image-cover">
-        <img src="img/sprav/zakon_oma.jpg" width="90" height="128" alt="" class="item-image">
+        <a data-fancybox="gallery" href="img/sprav/zakon_oma.jpg">
+          <img src="img/sprav/zakon_oma.jpg" width="90" height="128" alt="Формулы расчета" class="item-image">
+        </a>
       </div>
 
     </section>
@@ -62,6 +67,8 @@
       <small>&copy 2020 «Electro Shit»</small>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 

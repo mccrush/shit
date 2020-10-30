@@ -12,6 +12,7 @@
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <title>Electro Shit - Схемы</title>
 </head>
 
@@ -36,19 +37,25 @@
     <section class="section">
       <p class="item-p">Элетросчетчик</p>
       <div class="image-cover">
-        <img src="img/shems/schet.jpg" width="132" height="128" alt="" class="item-image">
+        <a data-fancybox="gallery" href="img/shems/schet.jpg">
+          <img src="img/shems/schet.jpg" width="132" height="128" alt="" class="item-image">
+        </a>
       </div>
 
       <hr>
       <p class="item-p">Проходной выключатель</p>
       <div class="image-cover">
-        <img src="img/shems/prohod.jpg" width="272" height="128" alt="" class="item-image">
+        <a data-fancybox="gallery" href="img/shems/prohod.jpg">
+          <img src="img/shems/prohod.jpg" width="272" height="128" alt="" class="item-image">
+        </a>
       </div>
     </section>
     <footer class="footer align-center">
       <small>&copy 2020 «Electro Shit»</small>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 
