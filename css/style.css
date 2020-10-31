@@ -142,10 +142,10 @@ ul.list > li.list-item {
 .block-shem {
   display: inline-block;
   width: 30%;
-  height: 90px;
+  height: 70px;
   text-align: center;
   text-decoration: none;
-  padding-top: 40px;
+  padding: 40px 16px;
   background-color: #F5F6F7;
   transition: 0.3s ease-in-out;
 }
