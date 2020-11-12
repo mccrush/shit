@@ -1,0 +1,22 @@
+.shems {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.block-shem {
+  display: block;
+  width: 25%;
+  padding: 16px;
+  text-align: center;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.block-shem:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
