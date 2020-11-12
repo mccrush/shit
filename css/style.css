@@ -13,6 +13,10 @@ body {
   line-height: 1.5;
 }
 
+hr {
+  border-top: 1px solid  rgba(210, 215, 217, 0.75);
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
   font-family: "Roboto Slab", serif; 
@@ -145,6 +149,34 @@ ul.list > li.list-item {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+/* Card */
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.card {
+  display: block;
+  width: 25%;
+  padding: 16px;
+  text-align: center;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.card img {
+  height: 128px;
 }
 
 
