@@ -1,0 +1,33 @@
+{
+  "name": "shit",
+  "version": "1.0.0",
+  "description": "Electro Shit - сайт-справочник электрика",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccrush/shit.git"
+  },
+  "keywords": [
+    "сайт",
+    "электрик",
+    "справочник"
+  ],
+  "author": "mccrush.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mccrush/shit/issues"
+  },
+  "homepage": "https://github.com/mccrush/shit#readme",
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
