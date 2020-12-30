@@ -9,11 +9,23 @@ const routes = [
     }
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/shem',
+    name: 'Shem',
     component: function () {
-      return import('../views/About.vue')
+      return import('../views/Shem.vue')
     }
+  },
+  {
+    path: '/sprav',
+    name: 'Sprav',
+    component: function () {
+      return import('../views/Sprav.vue')
+    }
+  },
+  ,
+  {
+    path: '/:catchAll(.*)',
+    component: () => import('../views/NotFound.vue')
   }
 ]
 
