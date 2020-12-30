@@ -1,108 +1,39 @@
 <template>
-  <section class="section">
-    <ul class="list">
-      <li class="list-item">
-        <div class="item-head">
-          <div><span class="item-head-count">1</span><span>Вводной автомат</span></div>
-          <span class="item-head-arrow">👉</span>
-        </div>
-        <div class="item-body">
-          <div class="image-cover">
-            <a data-fancybox="gallery" href="img/blocks/vvod.jpg">
-              <img src="img/blocks/vvod.jpg" width="128" height="128" alt="Вводной автомат" class="item-image">
-            </a>
+  <section>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" v-for="(element,index) in elements" :key="index">
+        <h2 class="accordion-header" :id="'heading'+index">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapse'+index"
+            aria-expanded="false" :aria-controls="'collapse'+index">
+            {{index + '&nbsp;' + element.title}}
+          </button>
+        </h2>
+        <div :id="'collapse'+index" class="accordion-collapse collapse show" :aria-labelledby="'heading'+index"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="image-cover">
+              <a data-fancybox="gallery" :href="element.img">
+                <img :src="element.img" width="128" height="128" :alt="element.title" class="item-image">
+              </a>
+            </div>
+            <p>{{element.description}}</p>
           </div>
-          <p class="item-p">
-            Это аппарат коммутации, устанавливаемый перед счетчиком, который позволяет автоматически обесточить
-            линию при аварийной ситуации, или при ремонта проводки.
-            Вводной автомат обычно устанавливают на лестничной
-            площадке или снаружи дома, на улице</p>
         </div>
-      </li>
-      <li class="list-item">
-        <div class="item-head">
-          <div><span class="item-head-count">2</span><span>Счетчик</span></div>
-          <span class="item-head-arrow">👉</span>
-        </div>
-        <div class="item-body">
-          <div class="image-cover">
-            <a data-fancybox="gallery" href="img/blocks/schetchik.jpg">
-              <img src="img/blocks/schetchik.jpg" width="128" height="128" alt="Счетчик" class="item-image">
-            </a>
-          </div>
-          <p class="item-p">Это прибор для измерения расхода электроэнергии переменного или постоянного тока (обычно в
-            кВт·ч или А·ч)</p>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="item-head">
-          <div><span class="item-head-count">3</span><span>Вольтметр</span></div>
-          <span class="item-head-arrow">👉</span>
-        </div>
-        <div class="item-body">
-          <div class="image-cover">
-            <a data-fancybox="gallery" href="img/blocks/voltmetr.png">
-              <img src="img/blocks/voltmetr.png" width="128" height="128" alt="Вольтметр" class="item-image">
-            </a>
-          </div>
-          <p class="item-p">Это электроизмерительный прибор непосредственного отсчёта для определения напряжения или
-            ЭДС в электрических цепях. Подключается параллельно нагрузке или источнику электрической энергии</p>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="item-head">
-          <div><span class="item-head-count">4</span><span>УЗМ</span></div>
-          <span class="item-head-arrow">👉</span>
-        </div>
-        <div class="item-body">
-          <div class="image-cover">
-            <a data-fancybox="gallery" href="img/blocks/stabil.jpg">
-              <img src="img/blocks/stabil.jpg" width="128" height="128" alt="УЗМ" class="item-image">
-            </a>
-          </div>
-          <p class="item-p">УЗМ расшифровывается, как «устройство защиты многофункциональное». Этот универсальный
-            аппарат защитит электрооборудование от скачков напряжения, импульсных помех, повышенного или пониженного
-            напряжения в сети</p>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="item-head">
-          <div><span class="item-head-count">5</span><span>УЗО</span></div>
-          <span class="item-head-arrow">👉</span>
-        </div>
-        <div class="item-body">
-          <div class="image-cover">
-            <a data-fancybox="gallery" href="img/blocks/uzo.webp">
-              <img src="img/blocks/uzo.webp" width="128" height="128" alt="УЗО" class="item-image">
-            </a>
-          </div>
-          <p class="item-p">Расшифровывается как «устройство защитного отключения», а специалисты предпочитают
-            называть его выключателем дифференциального тока. Прибор предназначен для отслеживания утечек тока,
-            возникающих при повреждении электропроводки и электроприборов</p>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="item-head">
-          <div><span class="item-head-count">6</span><span>Автомат</span></div>
-          <span class="item-head-arrow">👉</span>
-        </div>
-        <div class="item-body">
-          <div class="image-cover">
-            <a data-fancybox="gallery" href="img/blocks/avtomat.jpg">
-              <img src="img/blocks/avtomat.jpg" width="128" height="128" alt="Автомат" class="item-image">
-            </a>
-          </div>
-          <p class="item-p">Автоматический выключатель — это контактный коммутационный аппарат, который предназначен
-            для включения и отключения электрической цепи, защиты кабелей, проводов и электрических приборов от токов
-            перегрузки и от токов короткого замыкания</p>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
+  import Collapse from 'bootstrap'
+  import elements from '@/data/elements.js'
+
   export default {
-    name: 'Home'
+    name: 'Home',
+    data() {
+      return {
+        elements
+      }
+    }
   }
 </script>

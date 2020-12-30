@@ -29,6 +29,11 @@
 
 
 <style>
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.3s ease;

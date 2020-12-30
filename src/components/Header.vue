@@ -1,11 +1,7 @@
 <template>
-  <header class="header">
-    <h1 class="align-center">Electro ⚡ Shit</h1>
+  <header class="navbar">
+    <div class="container-fluid justify-content-center">
+      <h1>Electro ⚡ Shit</h1>
+    </div>
   </header>
 </template>
-
-<script>
-  export default {
-    name: 'Header'
-  }
-</script>

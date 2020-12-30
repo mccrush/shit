@@ -12,12 +12,6 @@
   </nav>
 </template>
 
-<script>
-  export default {
-    name: 'Nav'
-  }
-</script>
-
 <style scoped>
   .router-link-active {
     color: #fff;
