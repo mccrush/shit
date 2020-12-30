@@ -35,7 +35,7 @@ export default {
 }
 
 .section {
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .fade-enter-active,
