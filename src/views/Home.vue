@@ -60,10 +60,7 @@ export default {
 
 <style scoped>
 .accordion-button:not(.collapsed)::after {
-  background-image: url(
-    data:image/svg + xml,
-    %3csvgxmlns='http://www.w3.org/2000/svg'viewBox='0 0 16 16'fill='%23212529'%3e%3cpathfill-rule='evenodd'd='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e
-  );
+  background-image: url(../assets/btsicons/chevron-down.svg);
 }
 
 .accordion-button:not(.collapsed) {
