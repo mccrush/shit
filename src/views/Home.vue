@@ -25,7 +25,7 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <div class="image-cover">
+            <div class="image-cover d-flex justify-content-center">
               <a data-fancybox="gallery" :href="element.img">
                 <img
                   :src="element.img"
@@ -36,7 +36,7 @@
                 />
               </a>
             </div>
-            <p>{{ element.description }}</p>
+            <p class="mt-2 mb-0">{{ element.description }}</p>
           </div>
         </div>
       </div>
