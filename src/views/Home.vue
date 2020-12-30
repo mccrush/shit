@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section">
     <div class="accordion" id="accordionExample">
       <div
         class="accordion-item"

@@ -12,35 +12,39 @@
 </template>
 
 <script>
-  import 'bootstrap/dist/css/bootstrap.min.css'
-  import Header from '@/components/Header'
-  import Nav from '@/components/Nav'
-  import Footer from '@/components/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from '@/components/Header'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
-  export default {
-    name: 'App',
-    components: {
-      Header,
-      Nav,
-      Footer
-    }
-  }
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Nav,
+    Footer,
+  },
+}
 </script>
 
 
 <style>
-  .container {
-    max-width: 640px;
-    margin: 0 auto;
-  }
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
 
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.3s ease;
-  }
+.section {
+  margin-top: 16px;
+}
 
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
