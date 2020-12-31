@@ -5,7 +5,7 @@
         <a
           data-fancybox="gallery"
           href="img/shems/schet.png"
-          class="card border-0 h-100"
+          class="card h-100"
         >
           <img
             src="img/shems/icons/schet.svg"
@@ -22,7 +22,7 @@
         <a
           data-fancybox="gallery"
           href="img/shems/prohod.png"
-          class="card border-0 h-100"
+          class="card h-100 mt-2 mt-sm-0"
         >
           <img
             src="img/shems/icons/prohod.svg"
@@ -35,26 +35,6 @@
         </a>
       </div>
     </div>
-
-    <!-- <div class="cards">
-      <a data-fancybox="gallery" href="img/shems/schet.png" class="card">
-        <img
-          src="img/shems/icons/schet.svg"
-          width="100%"
-          alt="Схема подключения электросчетчика"
-        />
-        <h4 class="mt-8">Элетро&shy;счетчик</h4>
-      </a>
-
-      <a data-fancybox="gallery" href="img/shems/prohod.png" class="card">
-        <img
-          src="img/shems/icons/prohod.svg"
-          width="100%"
-          alt="Схема подключения проходного выключателя"
-        />
-        <h4 class="mt-8">Проход&shy;ной<br />выклю&shy;чатель</h4>
-      </a>
-    </div> -->
   </section>
 </template>
 
@@ -72,6 +52,16 @@ a.card {
 }
 
 a.card:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img-top {
+  max-height: 128px;
+  margin-top: 16px;
+}
+
+.card-title {
+  margin-bottom: 0;
 }
 </style>
