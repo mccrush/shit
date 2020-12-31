@@ -22,7 +22,14 @@ const routes = [
       return import('../views/Sprav.vue')
     }
   },
-  ,
+  {
+    path: '/shit/shem',
+    redirect: '/shem'
+  },
+  {
+    path: '/shit/sprav',
+    redirect: '/sprav'
+  },
   {
     path: '/:catchAll(.*)',
     component: () => import('../views/NotFound.vue')
