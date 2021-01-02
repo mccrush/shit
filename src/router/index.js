@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Shem from '../views/Shem.vue'
 
 const routes = [
   {
@@ -10,7 +9,7 @@ const routes = [
   {
     path: '/shem',
     name: 'Shem',
-    component: Shem
+    component: () => import('../views/Shem.vue')
   },
   {
     path: '/sprav',
@@ -34,7 +33,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  //history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
