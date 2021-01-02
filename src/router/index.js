@@ -1,19 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Shem from '../views/Shem.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: function () {
-      return import('../views/Home.vue')
-    }
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/shem',
     name: 'Shem',
-    component: function () {
-      return import('../views/Shem.vue')
-    }
+    component: Shem
   },
   {
     path: '/sprav',
