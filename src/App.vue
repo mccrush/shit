@@ -1,12 +1,8 @@
 <template>
   <div class="container">
     <Header />
-    <Nav @tab="getComponent" />
-    <!-- <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view> -->
+    <Nav @mytab="getComponent" />
+
     <transition name="fade" mode="out-in">
       <component :is="myComponent" />
     </transition>
@@ -40,7 +36,6 @@ export default {
       myComponent: 'Home',
     }
   },
-  computed: {},
   methods: {
     getComponent(comp) {
       this.myComponent = comp

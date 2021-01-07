@@ -2,8 +2,9 @@
   <nav class="row">
     <div class="col-4">
       <button
-        class="btn btn-block btn-light w-100"
-        @click="$emit('tab', 'Home')"
+        class="btn btn-block btn-light w-100 router-link-active"
+        @click="selectTab('Home', $event)"
+        id="home"
       >
         Щит
       </button>
@@ -11,7 +12,8 @@
     <div class="col-4">
       <button
         class="btn btn-block btn-light w-100"
-        @click="$emit('tab', 'Shem')"
+        @click="selectTab('Shem', $event)"
+        id="shem"
       >
         Схемы
       </button>
@@ -19,13 +21,28 @@
     <div class="col-4">
       <button
         class="btn btn-block btn-light w-100"
-        @click="$emit('tab', 'Sprav')"
+        @click="selectTab('Sprav', $event)"
+        id="sprav"
       >
         Справка
       </button>
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  methods: {
+    selectTab(compName, e) {
+      this.$emit('mytab', compName)
+      document.querySelector('#home').classList.remove('router-link-active')
+      document.querySelector('#shem').classList.remove('router-link-active')
+      document.querySelector('#sprav').classList.remove('router-link-active')
+      e.target.classList.add('router-link-active')
+    },
+  },
+}
+</script>
 
 <style scoped>
 .router-link-active {
