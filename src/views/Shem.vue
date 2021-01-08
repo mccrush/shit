@@ -48,6 +48,7 @@ export default {
 a.card {
   text-decoration: none;
   color: #212529;
+  border: 1px solid #f8f9fa;
   transition: 0.3s ease-in-out;
 }
 
@@ -63,5 +64,6 @@ a.card:hover {
 
 .card-title {
   margin-bottom: 0;
+  text-align: center;
 }
 </style>

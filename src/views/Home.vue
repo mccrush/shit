@@ -65,6 +65,6 @@ export default {
 
 .accordion-button:not(.collapsed) {
   color: #212529;
-  background-color: #fff3cd;
+  background-color: #f8f9fa;
 }
 </style>

@@ -124,7 +124,7 @@
               alt="Температуры ламп"
             />
             <div class="card-body">
-              <h5 class="card-title">Темпе&shy;ратуры&shy; ламп</h5>
+              <h5 class="card-title">Темпе&shy;ратуры ламп</h5>
             </div>
           </a>
         </div>
@@ -148,6 +148,7 @@ table tr th {
 a.card {
   text-decoration: none;
   color: #212529;
+  border: 1px solid #f8f9fa;
   transition: 0.3s ease-in-out;
 }
 
@@ -163,5 +164,6 @@ a.card:hover {
 
 .card-title {
   margin-bottom: 0;
+  text-align: center;
 }
 </style>
