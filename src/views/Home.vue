@@ -26,7 +26,11 @@
         >
           <div class="accordion-body">
             <div class="image-cover d-flex justify-content-center">
-              <a data-fancybox="gallery" :href="element.img">
+              <a
+                data-fancybox="gallery"
+                :href="element.img"
+                :data-caption="element.title"
+              >
                 <img
                   :src="element.img"
                   width="128"
