@@ -4,7 +4,7 @@
       <button
         class="btn btn-block btn-light w-100 router-link-active"
         @click="selectTab('Home', $event)"
-        id="home"
+        ref="home"
       >
         Щит
       </button>
@@ -13,7 +13,7 @@
       <button
         class="btn btn-block btn-light w-100"
         @click="selectTab('Shem', $event)"
-        id="shem"
+        ref="shem"
       >
         Схемы
       </button>
@@ -22,7 +22,7 @@
       <button
         class="btn btn-block btn-light w-100"
         @click="selectTab('Sprav', $event)"
-        id="sprav"
+        ref="sprav"
       >
         Справка
       </button>
@@ -35,9 +35,9 @@ export default {
   methods: {
     selectTab(compName, e) {
       this.$emit('mytab', compName)
-      document.querySelector('#home').classList.remove('router-link-active')
-      document.querySelector('#shem').classList.remove('router-link-active')
-      document.querySelector('#sprav').classList.remove('router-link-active')
+      this.$refs.home.classList.remove('router-link-active')
+      this.$refs.shem.classList.remove('router-link-active')
+      this.$refs.sprav.classList.remove('router-link-active')
       e.target.classList.add('router-link-active')
     },
   },
