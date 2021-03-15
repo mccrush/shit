@@ -39,8 +39,8 @@ export default {
       this.$refs.shem.classList.remove('router-link-active')
       this.$refs.sprav.classList.remove('router-link-active')
       e.target.classList.add('router-link-active')
-    },
-  },
+    }
+  }
 }
 </script>
 
@@ -49,5 +49,10 @@ export default {
   color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
+}
+
+.btn-check:focus + .btn-light,
+.btn-light:focus {
+  box-shadow: none;
 }
 </style>

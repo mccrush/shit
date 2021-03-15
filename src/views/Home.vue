@@ -56,13 +56,18 @@ export default {
   name: 'Home',
   data() {
     return {
-      elements,
+      elements
     }
-  },
+  }
 }
 </script>
 
 <style scoped>
+.accordion-button:focus {
+  border-color: rgba(0, 0, 0, 0.125);
+  box-shadow: none;
+}
+
 .accordion-button:not(.collapsed)::after {
   background-image: url(../assets/btsicons/chevron-down.svg);
 }
