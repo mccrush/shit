@@ -2,20 +2,42 @@
   <div>
     <section class="section">
       <h4 class="margin-h4">Расчет сечения кабеля и мощности автомата</h4>
-
-      <ul>
-        <li>1 мм кабеля выдерживает до 9 А, или до 2 кВт</li>
-        <li>Лучше медные, одножильные</li>
-        <li>Все многожильные обжимать или залуживать</li>
-        <li>Все скрутки обжимать или пропаивать, но лучше ч/з клеммы Вага</li>
-        <li>
-          УЗО на розетки (но можно и на свет и на ванную и на плиту и на климат)
-        </li>
-        <li>
-          Автоматы (по комнатам, отдельно на свет, отдельно на розетки, отдельно
-          на мощные эл. приборы)
-        </li>
-      </ul>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul>
+            <li>1 мм кабеля выдерживает до 9 А, или до 2 кВт</li>
+            <li>Лучше медные, одножильные</li>
+            <li>Все многожильные обжимать или залуживать</li>
+            <li>
+              Все скрутки обжимать или пропаивать, но лучше ч/з клеммы Вага
+            </li>
+            <li>
+              УЗО на розетки (но можно и на свет и на ванную и на плиту и на
+              климат)
+            </li>
+            <li>
+              Автоматы (по комнатам, отдельно на свет, отдельно на розетки,
+              отдельно на мощные эл. приборы)
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <a
+            data-fancybox="gallery"
+            href="img/sprav/color_coding.jpg"
+            class="card"
+          >
+            <img
+              src="img/sprav/icons/color_coding.png"
+              class="card-img-top"
+              alt="Маркировка проводов"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Маркировка проводов</h5>
+            </div>
+          </a>
+        </div>
+      </div>
 
       <table class="table table-striped table-bordered table-hover">
         <tr>
@@ -59,21 +81,23 @@
 
     <section>
       <h4 class="margin-h4">Единицы измерения</h4>
-      <ul>
-        <li>
-          Напряжение (U, вольт) - разность потенциалов (скорость электронов)
-        </li>
-        <li>
-          Сила тока (I, ампер) - количество электронов за секунду ч-з
-          поверхность
-        </li>
-        <li>
-          Мощность (P, ватт) - произведение мгновенных значений напряжения и
-          силы тока на участке цепи
-        </li>
-      </ul>
 
       <div class="row">
+        <div class="col-sm-8">
+          <ul>
+            <li>
+              Напряжение (U, вольт) - разность потенциалов (скорость электронов)
+            </li>
+            <li>
+              Сила тока (I, ампер) - количество электронов за секунду ч-з
+              поверхность
+            </li>
+            <li>
+              Мощность (P, ватт) - произведение мгновенных значений напряжения и
+              силы тока на участке цепи
+            </li>
+          </ul>
+        </div>
         <div class="col-sm-4">
           <a
             data-fancybox="gallery"
@@ -96,7 +120,7 @@
     <section>
       <h4 class="margin-h4">Отличия ламп</h4>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <a
             data-fancybox="gallery"
             href="img/sprav/lampa_wat.jpg"
@@ -112,7 +136,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <a
             data-fancybox="gallery"
             href="img/sprav/lampa_temp2.png"
@@ -135,7 +159,7 @@
 
 <script>
 export default {
-  name: 'Sprav',
+  name: 'Sprav'
 }
 </script>
 
@@ -148,7 +172,8 @@ table tr th {
 a.card {
   text-decoration: none;
   color: #212529;
-  border: 1px solid #f8f9fa;
+  /* border: 1px solid #f8f9fa; */
+  border: 1px solid #dee2e6;
   transition: 0.3s ease-in-out;
 }
 
@@ -159,7 +184,8 @@ a.card:hover {
 
 .card-img-top {
   max-height: 128px;
-  margin-top: 16px;
+  max-width: 128px;
+  margin: 16px auto 0 auto;
 }
 
 .card-title {

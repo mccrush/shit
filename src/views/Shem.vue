@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  name: 'Shem',
+  name: 'Shem'
 }
 </script>
 
@@ -48,7 +48,7 @@ export default {
 a.card {
   text-decoration: none;
   color: #212529;
-  border: 1px solid #f8f9fa;
+  border: 1px solid #dee2e6;
   transition: 0.3s ease-in-out;
 }
 
@@ -59,7 +59,8 @@ a.card:hover {
 
 .card-img-top {
   max-height: 128px;
-  margin-top: 16px;
+  max-width: 128px;
+  margin: 16px auto 0 auto;
 }
 
 .card-title {
